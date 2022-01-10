@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--======= BOX ICONS =======-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--======= CSS =======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" type="image/png" href="assets/img/pic-1.png">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">My recent works</span>
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio__nav">
+            <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+            <span class="portfolio__item" data-filter=".uiux">UI UX</span>
+            <span class="portfolio__item" data-filter=".web">Web Dev</span>
+            <span class="portfolio__item" data-filter=".design">Graphic Design</span>
+        </div>
+
+        <div class="portfolio__container bd-grid">
+            <div class="portfolio__content mix web">
+                <a href="portfolio_1.html"><img src="assets/img/web/web1.png" alt="" class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">Web development</span>
+                    <a href="portfolio_1.html">
+                        <h2 class="portfolio__title">My Portfolio Website</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__content mix web">
+                <a href="portfolio_2.html"><img src="assets/img/web/web2.png" alt="" class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">Web development</span>
+                    <a href="portfolio_2.html">
+                        <h2 class="portfolio__title">Laboratorium Sistem Informasi Website</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__content mix uiux">
+                <a href="portfolio_3.html"><img src="assets/img/uiux/Mockups (1).png" alt="" class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">UI/UX Design</span>
+                    <a href="portfolio_3.html">
+                        <h2 class="portfolio__title">Musics Player Mobile App Mockup</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__content mix uiux">
+                <a href="portfolio_4.html"><img src="assets/img/uiux/Mockups (2).png" alt="" class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">UI/UX Design</span>
+                    <a href="portfolio_4.html">
+                        <h2 class="portfolio__title">Adoption Pet Mobile App Mockup</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__content mix design">
+                <a href="portfolio_5.html"><img src="assets/img/flatfemale/flatfemale-cover.png" alt=""
+                        class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">Graphic Design</span>
+                    <a href="portfolio_5.html">
+                        <h2 class="portfolio__title">Flat Design Character Female Hijab</h2>
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__content mix design">
+                <a href="portfolio_6.html"><img src="assets/img/flatmale/flatmale-cover.png" alt=""
+                        class="portfolio__img"></a>
+                <div class="portfolio__data">
+                    <span class="portfolio__subtitle">Graphic Design</span>
+                    <a href="portfolio_6.html">
+                        <h2 class="portfolio__title">Flat Design Character Male</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <script>
+        const mixer = mixitup('.portfolio__container', {
+            selectors: {
+                target: '.portfolio__content'
+            },
+            animation: {
+                duration: 400
+            }
+        });
+    </script>
+
+</body>
+
+</html>
